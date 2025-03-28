@@ -1,0 +1,36 @@
+.smartAISuggest {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.suggestContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.suggestIcon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.suggestText {
+  flex-grow: 1;
+}
+
+.suggestTitle {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.suggestDescription {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+} 

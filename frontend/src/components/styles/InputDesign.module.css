@@ -1,0 +1,537 @@
+/* InputDesign.module.css */
+
+.mainContainer {
+    justify-content: center;
+    align-items: center;
+    max-width: none;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContainer {
+      max-width: 991px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .mainContainer {
+      max-width: 640px;
+    }
+  }
+  
+  .contentContainer {
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .contentContainer {
+      gap: 16px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .contentContainer {
+      flex-direction: column;
+    }
+  }
+  
+  .lightSection {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    flex-direction: column;
+    flex: 1;
+    padding: 40px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .lightSection {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .lightSection {
+      padding: 24px;
+    }
+  }
+  
+  .contentWrapper {
+    flex-direction: column;
+    gap: 16px;
+    display: flex;
+  }
+  
+  .sectionTitle {
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  
+  @media (max-width: 991px) {
+    .sectionTitle {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .sectionTitle {
+      font-size: 24px;
+    }
+  }
+  
+  .lightDescription {
+    color: #6b7280;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 991px) {
+    .lightDescription {
+      font-size: 14px;
+    }
+  }
+  
+  .primaryButton {
+    color: #fff;
+    cursor: pointer;
+    background-color: #059669;
+    border-radius: 6px;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 12px 24px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    border: none;
+  }
+  
+  @media (max-width: 640px) {
+    .primaryButton {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  
+  .darkSection {
+    color: #fff;
+    background-color: #059669;
+    border-radius: 8px;
+    flex-direction: column;
+    flex: 1;
+    padding: 40px;
+    display: flex;
+  }
+  
+  @media (max-width: 991px) {
+    .darkSection {
+      padding: 30px;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .darkSection {
+      padding: 24px;
+    }
+  }
+  
+  .darkDescription {
+    color: #ffffffe6;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 991px) {
+    .darkDescription {
+      font-size: 14px;
+    }
+  }
+  
+  .secondaryButton {
+    color: #059669;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 6px;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    padding: 12px 24px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline-flex;
+    border: none;
+  }
+  
+  @media (max-width: 640px) {
+    .secondaryButton {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+
+.layout {
+  background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #fff;
+  flex-direction: column;
+  width: 269px; /* Fixed width for the sidebar */
+  padding: 24px 0; /* Vertical padding */
+  display: flex; /* Flexbox layout */
+  position: relative; /* Position relative for absolute positioning of child elements */
+  box-shadow: inset -1px 0 #e4e5e8; /* Shadow for the sidebar */
+}
+
+.logoContainer {
+  align-items: center; /* Center items vertically */
+  gap: 4px; /* Space between logo and text */
+  margin-bottom: 24px; /* Space below the logo */
+  padding: 0 24px; /* Horizontal padding */
+  display: flex; /* Flexbox layout */
+}
+
+.logoText {
+  color: #252630; /* Text color for the logo */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 23px; /* Font size for the logo text */
+  font-weight: 700; /* Font weight for the logo text */
+}
+
+.sidebarLabel {
+  color: #9199a3; /* Text color for the sidebar label */
+  margin-bottom: 12px; /* Space below the label */
+  padding: 0 24px; /* Horizontal padding */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 12px; /* Font size for the sidebar label */
+  font-weight: 500; /* Font weight for the sidebar label */
+}
+
+.menuContainer {
+  flex-direction: column; /* Stack menu items vertically */
+  display: flex; /* Flexbox layout */
+  flex: 1; /* Take up remaining space */
+}
+
+.menuItem {
+  cursor: pointer; /* Pointer cursor on hover */
+  align-items: center; /* Center items vertically */
+  gap: 16px; /* Space between icon and text */
+  padding: 12px 20px; /* Padding for menu items */
+  display: flex; /* Flexbox layout */
+  background: none; /* No background */
+  border: none; /* No border */
+  width: 100%; /* Full width */
+  text-align: left; /* Align text to the left */
+}
+
+.menuText {
+  color: #767f8c; /* Text color for menu items */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 14px; /* Font size for menu items */
+  font-weight: 500; /* Font weight for menu items */
+}
+
+.activeMenuItem .menuText {
+  color: #00884a; /* Active menu item text color */
+}
+
+.logoutButton {
+  cursor: pointer; /* Pointer cursor on hover */
+  align-items: center; /* Center items vertically */
+  gap: 16px; /* Space between icon and text */
+  margin-top: auto; /* Push logout button to the bottom */
+  padding: 12px 20px; /* Padding for logout button */
+  display: flex; /* Flexbox layout */
+  background: none; /* No background */
+  border: none; /* No border */
+  width: 100%; /* Full width */
+  text-align: left; /* Align text to the left */
+}
+
+.mainContent {
+  flex: 1; /* Take up remaining space */
+  display: flex; /* Flexbox layout for main content */
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* TopBar styles */
+.topBar {
+  background-color: #fbfbfb; /* Light background color */
+  justify-content: space-between; /* Space between items */
+  align-items: center; /* Center items vertically */
+  height: 80px; /* Height of the top bar */
+  padding: 0 24px; /* Horizontal padding */
+  display: flex; /* Flexbox layout */
+  box-shadow: 0 1px #00000040; /* Subtle shadow for depth */
+}
+
+.topNav {
+  display: flex; /* Flexbox layout for navigation items */
+  align-items: center; /* Center items vertically */
+  gap: 24px; /* Space between navigation items */
+}
+
+.pageTitle {
+  color: #000; /* Text color for the page title */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 24px; /* Font size for the title */
+  font-weight: 600; /* Font weight for the title */
+}
+
+.topNavItems {
+  display: flex; /* Flexbox layout for navigation items */
+  gap: 16px; /* Space between navigation buttons */
+}
+
+.navLink {
+  color: #74768f; /* Text color for navigation links */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 16px; /* Font size for navigation links */
+  font-weight: 500; /* Font weight for navigation links */
+  background: none; /* No background */
+  border: none; /* No border */
+  padding: 0; /* No padding */
+}
+
+/* Content section styles */
+.contentSection {
+  flex: 1; /* Take up remaining space */
+  padding: 24px; /* Padding for the content section */
+}
+
+.contentHeader {
+  flex-direction: column; /* Stack items vertically */
+  gap: 8px; /* Space between items */
+  margin-bottom: 24px; /* Space below the header */
+  display: flex; /* Flexbox layout */
+  position: relative; /* Position relative for absolute positioning of child elements */
+}
+
+.welcomeText {
+  color: #18191c; /* Text color for the welcome message */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 18px; /* Font size for the welcome message */
+  font-weight: 500; /* Font weight for the welcome message */
+}
+
+.subText {
+  color: #767f8c; /* Text color for the subtext */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 14px; /* Font size for the subtext */
+  font-weight: 400; /* Font weight for the subtext */
+}
+
+.createButton {
+  color: #fff; /* Text color for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: #00884a; /* Background color for the button */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 12px 24px; /* Padding for the button */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 14px; /* Font size for the button */
+  font-weight: 500; /* Font weight for the button */
+  position: absolute; /* Positioning for the button */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+}
+
+.tableHeader {
+  background-color: #00884a; /* Background color for the table header */
+  border-radius: 4px; /* Rounded corners */
+  grid-template-columns: 276px 1fr 1fr 1fr; /* Grid layout for columns */
+  margin-bottom: 24px; /* Space below the table header */
+  padding: 10px 27px; /* Padding for the table header */
+  display: grid; /* Grid layout */
+}
+
+.columnHeader {
+  color: #fff; /* Text color for the column headers */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 12px; /* Font size for the column headers */
+  font-weight: 400; /* Font weight for the column headers */
+}
+
+.emptyState {
+  color: #c1c7cc; /* Text color for the empty state message */
+  text-align: center; /* Center the text */
+  padding: 24px; /* Padding for the empty state message */
+  font-family: Inter, sans-serif; /* Font family */
+  font-size: 16px; /* Font size for the empty state message */
+  font-weight: 500; /* Font weight for the empty state message */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 991px) {
+  .sidebar {
+    width: 240px; /* Adjust sidebar width for smaller screens */
+  }
+
+  .topNav {
+    display: none; /* Hide top navigation on smaller screens */
+  }
+
+  .contentSection {
+    padding: 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    display: none; /* Hide sidebar on mobile screens */
+  }
+
+  .topBar {
+    height: 60px; /* Adjust height for the top bar */
+    padding: 0 16px; /* Adjust padding for the top bar */
+  }
+
+  .contentHeader {
+    margin-bottom: 16px; /* Adjust margin for the content header */
+  }
+
+  .pageTitle {
+    font-size: 24px; /* Adjust font size for the page title */
+  }
+
+  .createButton {
+    width: 100%; /* Full width for the button on mobile */
+    margin-top: 16px; /* Margin for the button */
+    position: relative; /* Adjust positioning */
+  }
+
+  .tableHeader {
+    grid-template-columns: 1fr; /* Single column layout for mobile */
+    gap: 8px; /* Adjust gap for mobile */
+    padding: 8px 16px; /* Adjust padding for mobile */
+  }
+
+  .columnHeader {
+    text-align: center; /* Center text for mobile */
+  }
+}
+
+/* Table Styles */
+.tableContainer {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.projectTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.projectTable th,
+.projectTable td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.projectTable th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+.projectTable tr:hover {
+  background-color: #f9fafb;
+}
+
+.projectInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.projectName {
+  font-weight: 500;
+  color: #111827;
+}
+
+.projectDescription {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.category {
+  padding: 4px 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.stage {
+  padding: 4px 8px;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.inprogress {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.completed {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.pending {
+  background-color: #f3f4f6;
+  color: #374151;
+}
+
+.notstarted {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.viewButton {
+  padding: 6px 12px;
+  background-color: #00884a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.viewButton:hover {
+  background-color: #006c3a;
+}

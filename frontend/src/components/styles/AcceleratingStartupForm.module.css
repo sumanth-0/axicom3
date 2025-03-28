@@ -1,0 +1,66 @@
+/* AcceleratingStartupForm.module.css */
+
+.container {
+    background-color: #fff;
+    width: 100%;
+    max-width: none;
+    min-height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 56px 43px; /* Similar padding to InnovatorsHub */
+  }
+  
+  h1 {
+    color: #00884a;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 12px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #e4e5e8; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  .card {
+    border: 1px solid #e4e5e8; /* Border color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 24px; /* Padding inside the card */
+    margin-top: 40px; /* Space above the card */
+  }
+  
+  .button {
+    background-color: #00884a; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Padding for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: 10px; /* Space  between buttons */
+  }
+  
+  @media (max-width: 640px) {
+    .container {
+      padding: 24px 16px; /* Adjust padding for smaller screens */
+    }
+  
+    h1 {
+      font-size: 24px; /* Adjust font size for smaller screens */
+    }
+  }

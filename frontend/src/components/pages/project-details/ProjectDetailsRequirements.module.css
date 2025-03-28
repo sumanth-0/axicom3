@@ -1,0 +1,39 @@
+.requirements {
+  background-color: #eff1f2;
+  width: 354px;
+  padding: 24px;
+}
+
+.title {
+  color: #000;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+.buttonContainer {
+  flex-direction: column;
+  gap: 24px;
+  display: flex;
+}
+
+.button {
+  background-color: #fff;
+  height: 80px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.highlighted {
+  color: #00884a;
+  border: 1px solid #00884a;
+}
+
+@media (width <= 991px) {
+  .requirements {
+    width: 100%;
+  }
+} 

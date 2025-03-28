@@ -1,0 +1,376 @@
+.container {
+  width: 100%;
+  min-height: screen;
+  background-color: #fff;
+  font-family: Inter;
+}
+
+.header {
+  background-color: #fbfbfb;
+  border-width: 1px;
+  border-color: #e4e5e8;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.logoContainer {
+  align-items: center;
+  gap: 4px;
+  display: flex;
+}
+
+.logoIconWrapper {
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  display: flex;
+}
+
+.brandName {
+  color: #252630;
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.navLinks {
+  align-items: center;
+  gap: 24px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .navLinks {
+    display: none;
+  }
+}
+
+.navLink {
+  color: #74768f;
+  font-size: 16px;
+}
+
+.avatarContainer {
+  width: 44px;
+  height: 51px;
+}
+
+.mainContent {
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  display: flex;
+}
+
+@media (width<=640px) {
+  .mainContent {
+    padding: 16px;
+  }
+}
+
+.cardRow {
+  gap: 24px;
+  display: flex;
+}
+
+@media (width<=991px) {
+  .cardRow {
+    flex-direction: column;
+  }
+}
+
+.currentPlanCard {
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #e4e5e8;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  padding: 24px;
+  display: flex;
+}
+
+.cardTitle {
+  color: #18191c;
+  font-size: 16px;
+}
+
+.planInfoContainer {
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+}
+
+.planName {
+  color: #18191c;
+  font-size: 32px;
+}
+
+.planDescription {
+  color: #767f8c;
+  font-size: 16px;
+}
+
+.buttonGroup {
+  gap: 12px;
+  display: flex;
+}
+
+.primaryButton {
+  color: #00884a;
+  background-color: #f1f2f4;
+  border-radius: 3px;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.secondaryButton {
+  color: #767f8c;
+  padding: 12px 24px;
+  font-weight: 600;
+}
+
+.benefitsCard {
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #e4e5e8;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 1;
+  gap: 24px;
+  padding: 24px;
+  display: flex;
+}
+
+.benefitsHeader {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.benefitsTitle {
+  color: #18191c;
+  font-size: 16px;
+}
+
+.benefitsSubtitle {
+  color: #767f8c;
+  font-size: 14px;
+}
+
+.benefitsGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  display: grid;
+}
+
+@media (width<=640px) {
+  .benefitsGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.benefitItem {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.benefitText {
+  color: #474c54;
+  font-size: 14px;
+}
+
+.divider {
+  background-color: #e4e5e8;
+  width: 100%;
+  height: 1px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.remainingSection {
+  flex-direction: column;
+  gap: 12px;
+  display: flex;
+}
+
+.remainingTitle {
+  color: #767f8c;
+  font-size: 12px;
+}
+
+.remainingGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  display: grid;
+}
+
+@media (width<=640px) {
+  .remainingGrid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
+
+.remainingItem {
+  align-items: center;
+  gap: 8px;
+  display: flex;
+}
+
+.remainingText {
+  color: #474c54;
+  font-size: 14px;
+}
+
+.invoiceCard {
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #e4e5e8;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 1;
+  gap: 16px;
+  padding: 24px;
+  display: flex;
+}
+
+.invoiceTitle {
+  color: #18191c;
+  font-size: 16px;
+}
+
+.invoiceDetails {
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 4px;
+  display: flex;
+}
+
+.invoiceAmount {
+  color: #00884a;
+  font-size: 32px;
+}
+
+.invoiceDateContainer {
+  flex-direction: column;
+  gap: 8px;
+  display: flex;
+}
+
+.invoiceDateGroup {
+  flex-direction: column;
+  gap: 4px;
+  display: flex;
+}
+
+.invoiceDate {
+  color: #18191c;
+  font-size: 18px;
+}
+
+.packageInfo {
+  font-size: 14px;
+}
+
+.packageLabel {
+  color: #767f8c;
+}
+
+.packageValue {
+  color: #18191c;
+}
+
+.invoiceNote {
+  color: #9199a3;
+  font-size: 14px;
+}
+
+.payNowButton {
+  color: #fff;
+  background-color: #00884a;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  font-weight: 600;
+  display: flex;
+}
+
+.paymentMethodCard {
+  background-color: #fff;
+  border-width: 1px;
+  border-color: #e4e5e8;
+  border-radius: 8px;
+  flex-direction: column;
+  flex: 1;
+  gap: 24px;
+  padding: 24px;
+  display: flex;
+}
+
+.paymentCardHeader {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.paymentCardTitle {
+  color: #18191c;
+  font-size: 16px;
+}
+
+.editCardButton {
+  color: #767f8c;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  display: flex;
+}
+
+.cardDetailsContainer {
+  flex-direction: column;
+  gap: 20px;
+  display: flex;
+}
+
+.cardInfoRow {
+  align-items: center;
+  gap: 20px;
+  display: flex;
+}
+
+.cardInfoGroup {
+  flex-direction: column;
+  gap: 2px;
+  display: flex;
+}
+
+.cardInfoLabel {
+  color: #767f8c;
+  font-size: 12px;
+}
+
+.cardInfoValue {
+  color: #18191c;
+  font-size: 16px;
+}
+
+.cardNumber {
+  color: #18191c;
+  font-size: 24px;
+} 

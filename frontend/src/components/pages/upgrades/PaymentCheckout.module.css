@@ -1,0 +1,177 @@
+.checkout {
+  background-color: #fff;
+  min-height: 100vh;
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkoutContainer {
+  max-width: 936px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+@media (width<=991px) {
+  .checkoutContainer {
+    padding: 0 20px;
+  }
+}
+
+.checkoutContent {
+  background-color: #fff;
+  border-radius: 12px;
+  gap: 48px;
+  padding: 32px;
+  display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (width<=991px) {
+  .checkoutContent {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
+
+.paymentForm {
+  flex: 1;
+}
+
+.checkoutTitle {
+  margin-bottom: 32px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.paymentMethods {
+  gap: 16px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.paymentMethodButton {
+  cursor: pointer;
+  border-radius: 8px;
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  padding: 12px;
+  display: flex;
+}
+
+.formGroup {
+  margin-bottom: 24px;
+}
+
+.formLabel {
+  color: #74768f;
+  margin-bottom: 8px;
+  font-size: 14px;
+  display: block;
+}
+
+.formInput {
+  border: 1px solid #e4e5e8;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+}
+
+.cardDetailsGroup {
+  margin-bottom: 24px;
+}
+
+.cardDetailsRow {
+  gap: 16px;
+  display: flex;
+}
+
+.cardNumberInput {
+  border: 1px solid #e4e5e8;
+  border-radius: 8px;
+  flex: 3;
+  padding: 12px;
+}
+
+.expiryInput,
+.cvcInput {
+  border: 1px solid #e4e5e8;
+  border-radius: 8px;
+  flex: 1;
+  padding: 12px;
+}
+
+.orderSummary {
+  width: 320px;
+}
+
+@media (width<=991px) {
+  .orderSummary {
+    width: 100%;
+  }
+}
+
+.summaryCard {
+  background-color: #fbfbfb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.summaryTitle {
+  margin-bottom: 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.summaryRow {
+  justify-content: space-between;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.totalRow {
+  border-top: 1px solid #e4e5e8;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-top: 16px;
+  display: flex;
+}
+
+.totalLabel {
+  font-weight: 500;
+}
+
+.totalAmount {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.payButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #00884a;
+  border-radius: 8px;
+  width: 100%;
+  padding: 12px;
+  font-weight: 500;
+  border: none;
+}
+
+.payButton:hover {
+  background-color: #00703a;
+}
+
+.payButton:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.packageNote {
+  color: #74768f;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+} 
